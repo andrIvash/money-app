@@ -1,0 +1,6 @@
+.wallet__payment {
+    display: none;
+}
+.wallet__payment--open {
+    display: block;
+}
