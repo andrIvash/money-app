@@ -29,9 +29,10 @@ class Wallet extends Component {
           >+
           </button>
         </div>
-        <div className = {this.state.isOpen ? "wallet__payment wallet__payment--open" : "wallet__payment"}>
-          <Payment onSubmit = {this.onTransaction}/>
-        </div>
+        <Payment 
+          isOpen = {this.state.isOpen} 
+          onConfirmed = {this.onTransaction}
+        />
         <ul className = "transactions wallet__list">
           <li className = "transactions__item">
 
